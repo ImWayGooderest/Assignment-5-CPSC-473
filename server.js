@@ -15,11 +15,7 @@ app.listen(3000, function () {
 app.post("/flip", function (req, res) {
   "use strict";
   console.log("Flipping the coin");
-
-  //read json convert heads to 1 tails to
-  // if(req.body)
-
-  var coin;
+   var coin;
   var randomnumber = Math.floor(Math.random()*2);
   if(randomnumber === 0){
     coin = "tails";
